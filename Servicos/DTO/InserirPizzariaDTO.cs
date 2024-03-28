@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Servicos
 {
-    internal class InserirPizzariaDTO
+    public class InserirPizzariaDTO
     {
         public string Nome { get; set; }
 
