@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entidades;
+using Microsoft.EntityFrameworkCore;
 
 namespace TizzaAula
 {
@@ -9,9 +10,12 @@ namespace TizzaAula
 
         }
 
+        public DbSet<Pizzaria> Pizzaria { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            modelBuilder.Entity<Pizzaria>().HasKey(p  => p.Id);
+
             base.OnModelCreating(modelBuilder);
         }
     }

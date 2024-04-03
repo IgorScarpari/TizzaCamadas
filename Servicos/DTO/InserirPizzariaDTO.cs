@@ -13,5 +13,7 @@ namespace Servicos
         public string Endereco { get; set; }
 
         public string Telefone { get; set; }
+
+        public string Responsavel { get; set; }
     }
 }
