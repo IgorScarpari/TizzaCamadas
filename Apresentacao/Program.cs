@@ -19,6 +19,9 @@ builder.Services.AddDbContext<DataContext>(option =>
 builder.Services.AddScoped<IServPizzaria, ServPizzaria>();
 builder.Services.AddScoped<IRepoPizzaria, RepoPizzaria>();
 
+builder.Services.AddScoped<IServPromover, ServPromover>();
+builder.Services.AddScoped<IRepoPromover, RepoPromover>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
